@@ -1,0 +1,66 @@
+- period: "May 2026–Present"
+  organization: QFC Pharmacy - Broadway
+  role: Pharmacy Intern
+  color: "#D22030"
+  detail: |
+    - Engaged in travel medicine consultation and administered vaccines based on the patient's need.
+    - Operated pharmacy management systems and resolved third-party insurance claims and prior authorizations.
+    - Conducted Medication Therapy Management (MTM) and Comprehensive Medication Review (CMR) to ensure safety.
+
+- period: "Mar 2026–Apr 2026"
+  organization: UW Dental Clinic
+  role: APPE Pharmacy Intern
+  color: "#4B2E83"
+  detail: |
+    - Collaborated with the dental team to optimize antibiotic selection, dosing, and duration, ensuring evidence-based therapy aligned with current antimicrobial stewardship principles.
+    - Recommended appropriate anxiolytic regimens for patients with disabilities, tailoring agent selection and dosing to individual clinical needs, comorbidities, and procedural requirements.
+    - Conducted comprehensive medication reconciliation and review to identify drug interactions, contraindications, and opportunities to optimize patients' existing therapy prior to dental procedures.
+
+- period: "Feb 2025–Jun 2026"
+  organization: CVS Pharmacy – Northgate
+  role: Pharmacy Intern
+  color: "#CC0000"
+  detail: |
+    - Assist licensed pharmacists with prescription processing, verification, and dispensing under supervision.
+    - Provide medication counseling to patients on dosing, drug interactions, and side effects.
+    - Collaborate with healthcare providers and insurance representatives to ensure accurate, timely prescription fulfillment.
+
+- period: "Oct 2024–Jun 2025"
+  organization: Downtown Public Health Center
+  role: WIP2 Pharmacy Intern
+  color: "#0055A4"
+  detail: |
+    - Supported medication-adherence programs serving underserved patient populations.
+    - Assisted with immunization clinics and vaccine-administration documentation.
+    - Participated in patient counseling focused on chronic-disease state management.
+    - Helped maintain controlled-substance inventory and DEA compliance records.
+
+- period: "Jun 2024–Sep 2024"
+  organization: Overlake Medical Center
+  role: WIP1 Pharmacy Intern
+  color: "#005EB8"
+  detail: |
+    - Managed medication inventory, conducted audits, and maintained optimal stock levels.
+    - Assisted in the preparation of sterile IV medications following USP <797> guidelines.
+    - Counseled patients on over-the-counter medications appropriate to their symptoms.
+    - Participated in staff meetings and training sessions on industry regulations and new drug approvals.
+
+- period: "Jun 2024–Jul 2024"
+  organization: Seattle Children's Hospital
+  role: Hospital IPPE Pharmacy Intern
+  color: "#0096D6"
+  detail: |
+    - Conducted medication reconciliation to ensure accurate patient records and prevent drug interactions.
+    - Educated pediatric patients and caregivers on proper medication use, side effects, and interactions.
+    - Assisted pharmacists with medication dispensing and verified prescription accuracy.
+    - Collaborated with interdisciplinary healthcare teams in an inpatient pediatric setting.
+
+- period: "Feb 2022"
+  organization: WashU in St. Louis – Che Lab
+  role: Pharmaceutical Research Assistant
+  color: "#A51417"
+  detail: |
+    - Contributed to a structure-based design project investigating bitopic ligands targeting the µ-opioid receptor.
+    - Performed protein expression and purification, cell-culture maintenance, ligand-binding assays, and sample preparation.
+    - Conducted experiments characterizing ligand–receptor interactions and compiled data for downstream analysis.
+    - Maintained detailed laboratory notebooks documenting protocols, observations, and results.

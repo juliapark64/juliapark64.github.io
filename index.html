@@ -1,0 +1,60 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-heading">
+      <h1>{% include author-name-styled.html %}</h1>
+    </div>
+    <div class="hero-body">
+      <div class="bio">
+        {{ site.data.bio.text | markdownify }}
+      </div>
+      {% include social-icons.html %}
+    </div>
+    <div class="hero-portrait">
+      <img src="{{ '/assets/img/' | append: site.profile_image | relative_url }}" alt="{{ site.author.name }}">
+    </div>
+  </div>
+</section>
+
+
+
+<section class="experience-section" id="experience">
+  <div class="container">
+    <h2 class="section-heading">Experience</h2>
+    <div class="experience-timeline">
+      {% for item in site.data.experience %}
+      <div class="experience-item{% if item.color %} experience-item--brand{% endif %}"{% if item.letter_colors %} style="--experience-gradient: linear-gradient(135deg, {{ item.letter_colors | join: ', ' }})"{% elsif item.color %} style="--experience-color: {{ item.color }}"{% endif %}>
+        <time class="experience-date">{{ item.period }}</time>
+        <div class="experience-text">
+          <p class="experience-line"><strong class="experience-org">{% if item.letter_colors %}{% assign org_chars = item.organization | split: '' %}{% for char in org_chars %}<span class="experience-org-letter" style="color: {{ item.letter_colors[forloop.index0] }}">{{ char }}</span>{% endfor %}{% else %}{{ item.organization }}{% endif %}</strong><span class="experience-sep"> | </span><span class="experience-role">{{ item.role }}</span></p>
+          {% if item.detail %}
+          <div class="experience-detail">{{ item.detail | markdownify }}</div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="experience-section" id="leadership" style="padding-top: 0;">
+  <div class="container">
+    <h2 class="section-heading">Leadership & Professional Activities</h2>
+    <div class="experience-timeline">
+      {% for item in site.data.leadership %}
+      <div class="experience-item{% if item.color %} experience-item--brand{% endif %}"{% if item.letter_colors %} style="--experience-gradient: linear-gradient(135deg, {{ item.letter_colors | join: ', ' }})"{% elsif item.color %} style="--experience-color: {{ item.color }}"{% endif %}>
+        <time class="experience-date">{{ item.period }}</time>
+        <div class="experience-text">
+          <p class="experience-line"><strong class="experience-org">{% if item.letter_colors %}{% assign org_chars = item.organization | split: '' %}{% for char in org_chars %}<span class="experience-org-letter" style="color: {{ item.letter_colors[forloop.index0] }}">{{ char }}</span>{% endfor %}{% else %}{{ item.organization }}{% endif %}</strong><span class="experience-sep"> | </span><span class="experience-role">{{ item.role }}</span></p>
+          {% if item.detail %}
+          <div class="experience-detail">{{ item.detail | markdownify }}</div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

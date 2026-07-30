@@ -1,0 +1,84 @@
+title: Jeonghyeon (Julia) Park
+description: "Welcome to my website!"
+url: https://juliapark64.github.io
+baseurl: ""
+
+author:
+  first_name: Jeonghyeon (Julia)
+  last_name: Park
+  korean_name: "박정현"
+  pronunciation: ""
+  email: jpark64@uw.edu
+  github: juliapark64
+  linkedin: ""
+  scholar: ""
+  twitter: ""
+
+profile_image: space.jpg
+
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# LaTeX via Kramdown → MathJax (see _includes/head.html on post pages)
+kramdown:
+  input: GFM
+  math_engine: mathjax
+
+defaults:
+  - scope:
+      path: _posts
+    values:
+      layout: post
+      permalink: /blog/:slug/
+      comments: false
+
+comments:
+  utterances:
+    repo: juliapark64/juliapark64.github.io
+    issue_term: pathname
+    theme: preferred-color-scheme
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll/scholar
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+google_analytics: ""
+enable_google_analytics: false
+google_site_verification: ""
+
+scholar:
+  style: apa
+  locale: en
+  source: _data
+  bibliography: papers.bib
+  bibliography_template: bib
+  query: "@*"
+  sort_by: none
+  group_by: year
+  group_order: descending
+  bibliography_class: pub-bib
+  bibliography_list_tag: div
+  bibliography_item_tag: div
+  last_name: [Park]
+  first_name: [Jeonghyeon]
+  replace_strings: true
+  join_strings: true
+  details_link: false
+  bibtex_filters:
+    - latex
+    - smallcaps
+    - superscript
